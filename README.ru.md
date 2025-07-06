@@ -96,7 +96,6 @@ pip install uv
 ### 2. Клонирование и настройка проекта
 
 ```bash
-git clone <repository-url>
 cd telegram-bot
 ```
 
