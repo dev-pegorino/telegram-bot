@@ -1,0 +1,33 @@
+[project]
+name = "telegram-bot"
+version = "1.0.0"
+description = "Base Telegram bot using aiogram 3.x, with SQLAlchemy, Alembic, and support for SQLite/MySQL"
+
+authors = [{ name = "Ilnaz Mingaleev", email = "ilnazmingaleev0@gmail.com" }]
+readme = "README.md"
+
+requires-python = "~=3.13.0"
+dependencies = [
+    "aiogram>=3.21.0",
+    "pydantic-settings>=2.10.1",
+    "aiomysql>=0.2.0",
+    "aiosqlite>=0.21.0",
+    "sqlalchemy>=2.0.41",
+    "alembic>=1.16.2",
+    "colorama>=0.4.6",
+    "ruff>=0.12.1",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["src"]
+
+[tool.hatch.build.targets.wheel]
+include = ["src"]
+
+[project.scripts]
+start = "src.run:start"
+migrate = "src.utils.migration_database:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

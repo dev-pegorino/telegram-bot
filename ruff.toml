@@ -1,0 +1,21 @@
+line-length = 99
+target-version = "py313"
+fix = true
+
+[lint]
+select = ["E", "F", "I"]
+ignore = ["I001"]
+unfixable = ["I"]
+
+[lint.isort]
+force-sort-within-sections = false
+force-single-line = false
+combine-as-imports = false
+known-first-party = ["src"]
+
+[format]
+line-ending = "auto"
+quote-style = "preserve"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = true

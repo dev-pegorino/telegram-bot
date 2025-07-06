@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+src/.env
+
+# IDE
+.vscode/
+
+# Logs
+logs/
+
+# uv, ruff
+uv.lock
+.ruff_cache/
+
+# alembic
+alembic/versions/
+alembic.ini
