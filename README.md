@@ -96,7 +96,7 @@ pip install uv
 ### 2. Clone and setup project
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/dev-pegorino/telegram-bot.git
 cd telegram-bot
 ```
 
